@@ -14,7 +14,7 @@ export const ChatTypeSelector: FC<Prop> = (props) => {
   return (
     <Tabs
       defaultValue={chatBody.chatType}
-      onValueChange={(value) => onChatTypeChange(value as ChatType)}
+      onValueChange={(value) => {onChatTypeChange(value as ChatType)}}
     >
       <TabsList className="grid w-full grid-cols-2 h-12 items-stretch">
         <TabsTrigger
