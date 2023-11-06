@@ -51,7 +51,7 @@ const ChatInput: FC<Props> = (props) => {
           onChange={onChange}
         ></Textarea>
         <div className="absolute right-0 bottom-0 px-8 flex items-end h-full mr-2 mb-4">
-          {speechEnabled && <Microphone disabled={isLoading} />}
+          {speechEnabled==="true" && <Microphone disabled={isLoading} />}
           <Button
             size="icon"
             type="submit"
